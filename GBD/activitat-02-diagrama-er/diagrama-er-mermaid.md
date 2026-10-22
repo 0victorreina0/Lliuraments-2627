@@ -1,19 +1,6 @@
-##
-
-erDiagram
-    Personatges{
-        string DNI PK
-        string Nom "NOT NULL"
-        string Cognom
-        int Vida
-        int Força
-        int Agilitat
-        int Carisma
-    }
-
 
 ## Diagrama entero
-
+```mermaid
 erDiagram
     Personatges{
         string DNI PK
@@ -71,3 +58,4 @@ erDiagram
     Habilitat }o -- o{ Enemic : Enfrenta
     Habilitat }o -- o{ Habilitat : Combina_amb
     Mascota }o -- o{ Item : Carrega
+```
