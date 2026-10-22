@@ -1,3 +1,15 @@
+##
+
+erDiagram
+    Personatges{
+        string DNI PK
+        string Nom "NOT NULL"
+        string Cognom
+        int Vida
+        int Força
+        int Agilitat
+        int Carisma
+    }
 
 
 ## Diagrama entero
