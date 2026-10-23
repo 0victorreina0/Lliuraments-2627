@@ -16,7 +16,7 @@ erDiagram
         int Carisma
     }
 ```
-# AEntitat Mascota
+# Entitat Mascota
 
 He creat l'entitat Mascota per representar les mascotes del videojoc. He afegit el número de xip com a clau primària (PK), el nom i la motxilla.
 
