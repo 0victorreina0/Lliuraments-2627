@@ -6,7 +6,7 @@ Primer he creat l'entitat Personatges, que representa els personatges del videoj
 
 ## Codi
 
-```mermaid
+
 erDiagram
     Personatges {
         string DNI PK
@@ -17,7 +17,9 @@ erDiagram
         int Agilitat
         int Carisma
     }
+
 ## Diagrama entero
+
 ```mermaid
 erDiagram
     Personatges{
