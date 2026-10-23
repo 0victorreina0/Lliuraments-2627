@@ -3,10 +3,7 @@
 ## Explicació
 
 Primer he creat l'entitat Personatges, que representa els personatges del videojoc. He afegit el DNI com a clau primària i els atributs corresponents.
-
-## Codi
-
-
+```mermaid
 erDiagram
     Personatges {
         string DNI PK
@@ -17,7 +14,7 @@ erDiagram
         int Agilitat
         int Carisma
     }
-
+```
 ## Diagrama entero
 
 ```mermaid
