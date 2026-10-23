@@ -1,7 +1,5 @@
 ## Entitat de Personatges
 
-## Explicació
-
 Primer he creat l'entitat Personatges, que representa els personatges del videojoc. He afegit el DNI com a clau primària i els atributs corresponents.
 
 ```mermaid
