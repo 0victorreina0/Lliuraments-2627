@@ -1,4 +1,16 @@
+##Creació de l'entitat Personatges
+Primer he creat l'entitat Personatges, que representa els personatges del videojoc. He afegit el DNI com a clau primària (PK) i els atributs nom, cognom, vida, força, agilitat i carisma.
 
+erDiagram
+    Personatges {
+        string DNI PK
+        string Nom "NOT NULL"
+        string Cognom
+        int Vida
+        int Forca
+        int Agilitat
+        int Carisma
+    }
 ## Diagrama entero
 ```mermaid
 erDiagram
