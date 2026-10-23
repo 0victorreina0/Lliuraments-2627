@@ -82,6 +82,105 @@ erDiagram
     }
 ```
 
+##  Relació entre Personatges i Mascota
+
+He creat la relació Acompanya entre Personatges i Mascota.
+És una relació d'un a un (1:1), que indica que cada personatge
+té una mascota i cada mascota acompanya un personatge.
+
+```mermaid
+erDiagram
+    Personatges ||--|| Mascota : Acompanya
+```
+
+## Relació entre Personatges i Enemic
+
+He creat la relació Enfrenta entre Personatges i Enemic.
+És una relació de molts a molts (N:M), ja que un personatge
+pot enfrontar-se a diversos enemics i un enemic pot
+enfrontar-se a diferents personatges.
+
+```mermaid
+erDiagram
+    Personatges }o--o{ Enemic : Enfrenta
+```
+
+## Relació entre Personatges i Habilitat
+
+He creat la relació Poseeix entre Personatges i Habilitat.
+És una relació de molts a molts (N:M), perquè un personatge
+pot tenir diverses habilitats i una mateixa habilitat
+pot pertànyer a diferents personatges.
+
+```mermaid
+erDiagram
+    Personatges }o--o{ Habilitat : Poseeix
+```
+
+## Relació entre Personatges i Item
+
+He creat la relació Equipa entre Personatges i Item.
+És una relació de molts a molts (N:M), ja que un personatge
+pot equipar diferents objectes i un mateix tipus d'objecte
+pot ser equipat per diversos personatges.
+
+```mermaid
+erDiagram
+    Personatges }o--o{ Item : Equipa
+```
+
+## Relació entre Habilitat i Enemic
+
+He creat la relació Enfrenta entre Habilitat i Enemic.
+És una relació de molts a molts (N:M), perquè una habilitat
+pot utilitzar-se contra diversos enemics i un enemic
+pot rebre diferents habilitats.
+
+```mermaid
+erDiagram
+    Habilitat }o--o{ Enemic : Enfrenta
+```
+
+## Relació entre Habilitat i Habilitat
+
+He creat la relació Combina_amb entre Habilitat i Habilitat.
+És una relació de molts a molts (N:M), ja que una habilitat
+es pot combinar amb diverses habilitats per crear
+diferents combinacions.
+
+```mermaid
+erDiagram
+    Habilitat }o--o{ Habilitat : Combina_amb
+```
+
+## Relació entre Mascota i Item
+
+He creat la relació Carrega entre Mascota i Item.
+És una relació de molts a molts (N:M), perquè una mascota
+pot portar diversos objectes a la motxilla i un mateix
+tipus d'objecte pot ser transportat per diferents mascotes.
+
+```mermaid
+erDiagram
+    Mascota }o--o{ Item : Carrega
+```
+
+# Diagrama de les relacions
+
+
+Finalment, he ajuntat totes les relacions en un únic diagrama
+per veure com es connecten les diferents entitats del videojoc.
+
+```mermaid
+erDiagram
+    Personatges ||--|| Mascota : Acompanya
+    Personatges }o--o{ Enemic : Enfrenta
+    Personatges }o--o{ Habilitat : Poseeix
+    Personatges }o--o{ Item : Equipa
+    Habilitat }o--o{ Enemic : Enfrenta
+    Habilitat }o--o{ Habilitat : Combina_amb
+    Mascota }o--o{ Item : Carrega
+```
 
 ## Diagrama entero
 
